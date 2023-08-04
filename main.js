@@ -49,7 +49,7 @@ function init() {
             //set #loading value to percentComplete
             const dom = document.getElementById('loading');
             dom.value = percentComplete;
-            if (percentComplete === 100) {
+            if (percentComplete >= 100) { //loading complete, percentage sometimes > 100
                 //hide #loading-container
                 const dom = document.getElementById('loading-container');
                 dom.style.display = 'none';
